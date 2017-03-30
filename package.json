@@ -1,0 +1,14 @@
+{
+  "name": "cloudy",
+  "version": "0.1.0",
+  "author": "Wardell Bellanger <wbellang@gmail.com>",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "bcrypt": "^1.0.2",
+    "meteor-node-stubs": "~0.2.4"
+  }
+}
