@@ -1,3 +1,4 @@
+import { Session } from 'meteor/session'
 import './login.html';
 
 Template.login.onCreated(function() {
@@ -33,7 +34,13 @@ Template.login.onRendered(function() {
           Bert.alert(err.reason, 'danger', 'fixed-top');
         } else {
           console.log('User logged in successfully', Meteor.user())
-          FlowRouter.go('home');
+          const redirectPath = Session.get('redirectAfterLogin');
+          if (redirectPath) {
+            FlowRouter.go(redirectPath);
+            Session.set('redirectAfterLogin', undefined);
+          } else {
+            FlowRouter.go('home');
+          }
         }
       });
     }

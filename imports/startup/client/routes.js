@@ -1,5 +1,6 @@
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
+import { Session } from 'meteor/session';
 
 // Import needed templates
 import '../../ui/layouts/body/body.js';
@@ -18,6 +19,12 @@ function redirectIfLoggedIn (ctx, redirect) {
 
 function checkLoggedIn (ctx, redirect) {
   if (!Meteor.userId() && !Meteor.loggingIn()) {
+    const current = FlowRouter.current();
+
+    if (current.route.name !== 'login') {
+      Session.set('redirectAfterLogin', current.path)
+    }
+
     redirect('/login')
   }
 }
