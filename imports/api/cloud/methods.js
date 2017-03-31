@@ -2,14 +2,14 @@
 
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
-import { CloudObjects } from './cloud-objects.js';
+import { CloudObjectDefinitions } from './cloud-object-definitions.js';
 
 Meteor.methods({
-  'cloudObjects.insert'(name, url) {
+  'cloudObjectDefinitions.insert'(name, url) {
     check(name, String);
     check(url, String);
 
-    return CloudObjects.insert({
+    return CloudObjectDefinitions.insert({
       name,
       url,
       createdAt: new Date(),

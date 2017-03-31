@@ -2,4 +2,4 @@
 
 import { Mongo } from 'meteor/mongo';
 
-export const CloudObjects = new Mongo.Collection('cloudobjects');
+export const CloudObjects = new Mongo.Collection('cloud_objects');

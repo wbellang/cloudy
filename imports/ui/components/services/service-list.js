@@ -1,15 +1,15 @@
-import { CloudObjects } from '/imports/api/cloud/cloud-objects.js';
+import { CloudObjectDefinitions } from '/imports/api/cloud/cloud-object-definitions.js';
 import { Meteor } from 'meteor/meteor';
 
 import './service-list.html';
 
 Template.service_list.onCreated(function () {
-  Meteor.subscribe('cloudObjects.all');
+  Meteor.subscribe('cloudObjectDefinitions.all');
 });
 
 Template.service_list.helpers({
-  cloudObjects() {
-    return CloudObjects.find({});
+  cloudObjectDefinitions() {
+    return CloudObjectDefinitions.find({});
   }
 });
 
