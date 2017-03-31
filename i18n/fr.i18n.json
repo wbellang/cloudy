@@ -1,5 +1,21 @@
 {
     "application": {
       "name": "Nuageux"
+    },
+    "common": {
+      "or": "ou"
+    },
+    "login": {
+      "button": "Laisse moi entrer",
+      "signup": "Créer un compte",
+      "reset": "Réinitialiser le mot de passe",
+      "email": {
+        "label": "Email",
+        "placeholder": "Entrer votre Email"
+      },
+      "password": {
+        "label": "Mot de passe",
+        "placeholder": "Tapez votre mot de passe"
+      }
     }
 }

@@ -1,5 +1,21 @@
 {
     "application": {
       "name": "Cloudy"
+    },
+    "common": {
+      "or": "or"
+    },
+    "login": {
+      "button": "Let Me In",
+      "signup": "Create Account",
+      "reset": "Reset Password",
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your Email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your Password"
+      }
     }
 }
