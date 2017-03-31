@@ -1,6 +1,8 @@
 # Meteor
 .meteor/local
 .meteor/meteorite
+settings-development.json
+settings-production.json
 
 # OS X
 .DS_Store*
