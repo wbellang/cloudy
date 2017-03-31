@@ -1,0 +1,21 @@
+{
+    "application": {
+      "name": "Nublado"
+    },
+    "common": {
+      "or": "u"
+    },
+    "login": {
+      "button": "Déjame entrar",
+      "signup": "Crear una cuenta",
+      "reset": "Restablecer la contraseña",
+      "email": {
+        "label": "Email",
+        "placeholder": "Introduce tu correo electrónico"
+      },
+      "password": {
+        "label": "Contraseña",
+        "placeholder": "Ingrese su contraseña"
+      }
+    }
+}
