@@ -55,6 +55,13 @@ loggedInRoutes.route('/',  {
   }
 });
 
+loggedInRoutes.route('/services',  {
+  name: 'manageServices',
+  action() {
+    BlazeLayout.render('App_body', { main: 'manage_services' });
+  }
+});
+
 loggedInRoutes.route('/logout',  {
   name: 'logout',
   action() {
